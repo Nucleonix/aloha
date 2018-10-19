@@ -1,0 +1,22 @@
+// Lab for CS
+// @Dylan Tucker 
+
+import java.util.Random;
+
+public class rand_phonenumber
+{
+  public static void main (String[] args)
+  {
+    
+    	Random numgen = new Random();
+
+    	int areacode, secondnumber, thirdnumber;
+
+    	areacode = numgen.nextInt (900) + 100;
+    	secondnumber = numgen.nextInt (643) + 100;
+    	thirdnumber = numgen.nextInt (9000) + 1000;
+
+    	System.out.println(areacode + "-" + secondnumber + "-" + thirdnumber);
+    
+  }
+}
